@@ -1,10 +1,11 @@
 $(document).ready(function() {
 
 	animationHover('#logo-container h1', 'pulse');
+	animationHover('#logo-container-footer h1', 'pulse');
 
-	animationClick('.button', 'rotateOut');
+	animationClick('.button', 'rubberBand');
 
-    accordionClick('.cliknime')
+    accordionClick('.click')
 
     function animationHover(element, animation) {
         element = $(element);
@@ -39,7 +40,7 @@ $(document).ready(function() {
         element = $(element);
         element.click(
             function() {
-                element.toggleClass('activated');
+                element.addClass('activated');
                 //wait for animation to finish before removing classes
                 //window.setTimeout(function() {
                 //    element.removeClass('activated');
@@ -76,18 +77,19 @@ $(document).ready(function() {
         }
 
         if (y >= 1000) {
-            $('#video').addClass('active');
+            $('#title-video').addClass('active');
             $('#video h1').addClass('fadeInDown');
             $('#bd2').addClass('bounceInUp');
         }
         if (y >= 1200) {
             $('#video video').addClass('zoomInUp');
+            $('video').addClass('active');
         }
 
         if (y >= 1900) {
             $('#title-menu').addClass('active');
             $('#menu h1').addClass('zoomInDown');
-            $('#bd3').addClass('fadeIn');
+            $('#bd3').addClass('bounceInUp');
             $('#bd3 img').addClass('bounceIn');
         }
 
@@ -117,8 +119,11 @@ $(document).ready(function() {
             $('#title-contact h1').addClass('zoomInLeft');
         }
         if (y >= 3350) {
-            $('#bd4').addClass('fadeIn');
+            $('#bd4 img').addClass('active');
             $('#bd4 img').addClass('bounceIn');
+            $('#bd4').addClass('bounceInUp');
+            $('#bd4').addClass('active');
+            $('#title-contact p').addClass('active');
             $('#title-contact p').addClass('zoomInRight');
         }
 
@@ -127,8 +132,9 @@ $(document).ready(function() {
             $('#googleMap').addClass('rotateIn');
         }
         if (y >= 4150) {
-            $('#bd5').addClass('fadeIn');
+            $('#bd5').addClass('bounceInUp');
             $('#bd5 img').addClass('bounceIn');
+            $('#title-message').addClass('active');
             $('#title-message h1').addClass('rotateInDownRight');
             $('#title-message p').addClass('rotateInUpLeft');
         }
@@ -144,7 +150,7 @@ $(document).ready(function() {
 
         if (y >= 4480) {
             $('#footer').addClass('active');
-            $('#footer h1').addClass('rotateIn');
+            //$('#footer h1').addClass('rotateIn');
             $('#footer p').addClass('rotateIn');
             $('#footer img').addClass('rotateIn');
         }

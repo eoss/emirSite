@@ -186,14 +186,14 @@
         <!-- Articles END -->
 
         <!-- Video -->
-        <section id="video" class="passive parallax-window" data-parallax="scroll" data-image-src="img/bgd-video.jpg">
-            <div id="title-video">
+        <section id="video" class="parallax-window" data-parallax="scroll" data-image-src="img/bgd-video.jpg">
+            <div id="title-video" class="passive">
                 <h1 class="animated">Our Video</h1>
                 <div class="bd1 animated" id="bd2">
                     <img class="animated" src="img/flower.png" alt="flw"/>
                 </div>
             </div>
-            <video controls class="animated">
+            <video controls class="animated passive">
                 <source src="manhattansteakhouse_rev.mp4" type="video/mp4">
             </video>
         </section>
@@ -211,120 +211,441 @@
 
         <!-- Accordion -->
         <section id="accordion" class="passive">
-            <div>
+            <div id="wines">
                 <div class="bt-accordion accordion" id="wineList">
-                    <div class="bt-accordion-itemBg deactivated cliknime" style="background:url('img/menu/wine.jpg')"></div>
+                    <div class="bt-accordion-itemBg deactivated click" style="background:url('img/menu/wine.jpg')"></div>
                         <h3 class="animated cliknime">Wine List</h3>
                     <div class="wrapper cf  wine" id="wine">
-                        <!--<h3>Wine List</h3>-->
-                        <h4>White Wines by the Glass</h4>
-                            <h5>White zinfandel</h5><h5>$ 7</h5>
-                            <h5>Chardonnay, Frontera</h5><h5>$ 8</h5>
-                            <h5>Coastal Rigge Risling</h5><h5>$ 8</h5>
-                            <h5>Pinot Grigio Princih5ato</h5><h5>$ 9</h5>
-                            <h5>Sauvignon Blanc Frontera</h5><h5>$ 9</h5>
-                            <h5>Simi Sonoma Chardonnay</h5><h5>$ 12</h5>
-                        <h4>Red Wines by the Glass</h4>
-                            <h5>Chianti Placido</h5><h5>$ 9</h5>
-                            <h5>Down Under Shiraz</h5><h5>$ 8</h5>
-                            <h5>Merlot Frontera</h5><h5>$ 8</h5>
-                            <h5>Pinot Noir Frontera</h5><h5>$ 10</h5>
-                            <h5>Cabernet Frontra</h5><h5>$ 10</h5>
-                            <h5>Malbec Calia</h5><h5>$ 10</h5>
-                            <h5>Cabernet Simi Sonoma</h5><h5>$ 13</h5>
+                        <div class="bt-container">
+                            <! -- White Wines -->
+                            <h4>White Wines by the Glass</h4>
+                            <div class="bt-menu">
+                                <div class="bt-menu-item">
+                                    <h5>White zinfandel</h5>
+                                    <p>Price: $7</p>
+                                </div>
+                            </div>
+                            <div class="bt-menu right">
+                                <div class="bt-menu-item">
+                                    <h5>Chardonnay, Frontera</h5>
+                                    <p>Price: $8</p>
+                                </div>
+                            </div>
+                            <div class="bt-menu">
+                                <div class="bt-menu-item">
+                                    <h5>Coastal Rigge Risling</h5>
+                                    <p>Price: $8</p>
+                                </div>
+                            </div>
+                            <div class="bt-menu right">
+                                <div class="bt-menu-item">
+                                    <h5>Pinot Grigio Principato</h5>
+                                    <p>Price: $9</p>
+                                </div>
+                            </div>
+                            <div class="bt-menu">
+                                <div class="bt-menu-item">
+                                    <h5>Sauvignon Blanc Frontera</h5>
+                                    <p>Price: $9</p>
+                                </div>
+                            </div>
+                            <div class="bt-menu right">
+                                <div class="bt-menu-item">
+                                    <h5>Simi Sonoma Chardonnay</h5>
+                                    <p>Price: $12</p>
+                                </div>
+                            </div>
+                        </div>
+                        <! -- Red Wines -->
+                        <div class="bt-container">
+                            <h4 class="pt">Red Wines by the Glass</h4>
+                            <div class="bt-menu">
+                                <div class="bt-menu-item">
+                                    <h5>Chianti Placido</h5>
+                                    <p>Price: $9</p>
+                                </div>
+                            </div>
+                            <div class="bt-menu right">
+                                <div class="bt-menu-item">
+                                    <h5>Down Under Shiraz</h5>
+                                    <p>Price: $8</p>
+                                </div>
+                            </div>
+                            <div class="bt-menu">
+                                <div class="bt-menu-item">
+                                    <h5>Merlot Frontera</h5>
+                                    <p>Price: $8</p>
+                                </div>
+                            </div>
+                            <div class="bt-menu right">
+                                <div class="bt-menu-item">
+                                    <h5>Pinot Noir Frontera</h5>
+                                    <p>Price: $10</p>
+                                </div>
+                            </div>
+                            <div class="bt-menu">
+                                <div class="bt-menu-item">
+                                    <h5>Cabernet Frontra</h5>
+                                    <p>Price: $10</p>
+                                </div>
+                            </div>
+                            <div class="bt-menu right">
+                                <div class="bt-menu-item">
+                                    <h5>Malbec Calia</h5>
+                                    <p>Price: $10</p>
+                                </div>
+                            </div>
+                            <div class="bt-menu center">
+                                <div class="bt-menu-item">
+                                    <h5>Cabernet Simi Sonoma</h5>
+                                    <p>Price: $13</p>
+                                </div>
+                            </div>
+                        </div>
+                        <! -- Red Wines -->
                     </div>
                 </div>
             </div>
             <div>
-                <div class="bt-accordion accordion">
-                    <div class="bt-accordion-itemBg deactivated" style="background:url('img/menu/salad.jpg')"></div>
-                    <h3 class="animated cliknime">Appetizers - Salads</h3>
-                    <div class="wrapper cf  wine" id="salads">
-                        <h4>Enjoy in our Restaurant</h4>
-                            <h5>Iceberg Wedge (With blue Cheese & Bacon)</h5>
-                            <h5>Manhattan Clam Chowder Soup</h5>
-                            <h5>Beefsteak Tomatos and Onions</h5>
-                            <h5>Lightly Fried Calamari</h5>
-                            <h5>Hearts of Romaine Caesar Salad</h5>
-                            <h5>Buffalo Mozzarella with sliced Tomato</h5>
-                            <h5>Marinated Seafood Salad</h5>
-                            <h5>Sashimi Spicy Tuna with Citrus soy glaze</h5>
-                            <h5>Smoked Salmon (Capers,Onions)</h5>
-                            <h5>Iced Shrimp Cocktail (4)</h5>
+                <div class="bt-accordion accordion" id="salads">
+                    <div class="bt-accordion-itemBg deactivated cliknime" style="background:url('img/menu/salad.jpg')"></div>
+                        <h3 class="animated cliknime">Appetizers - Salads</h3>
+                    <div class="wrapper cf  wine">
+                        <div class="bt-container">
+                            <! -- Appetizers - Salads -->
+                            <h4>Enjoy in our Restaurant</h4>
+                            <div class="bt-menu">
+                                <div class="bt-menu-item">
+                                    <h5>Iceberg Wedge (With blue Cheese & Bacon)</h5>
+                                    <p>Price: $</p>
+                                </div>
+                            </div>
+                            <div class="bt-menu right">
+                                <div class="bt-menu-item">
+                                    <h5>Manhattan Clam Chowder Soup</h5>
+                                    <p>Price: $</p>
+                                </div>
+                            </div>
+                            <div class="bt-menu">
+                                <div class="bt-menu-item">
+                                    <h5>Beefsteak Tomatos and Onions</h5>
+                                    <p>Price: $</p>
+                                </div>
+                            </div>
+                            <div class="bt-menu right">
+                                <div class="bt-menu-item">
+                                    <h5>Lightly Fried Calamari</h5>
+                                    <p>Price: $</p>
+                                </div>
+                            </div>
+                            <div class="bt-menu">
+                                <div class="bt-menu-item">
+                                    <h5>Hearts of Romaine Caesar Salad</h5>
+                                    <p>Price: $</p>
+                                </div>
+                            </div>
+                            <div class="bt-menu right">
+                                <div class="bt-menu-item">
+                                    <h5>Buffalo Mozzarella with sliced Tomato</h5>
+                                    <p>Price: $</p>
+                                </div>
+                            </div>
+                            <div class="bt-menu right">
+                                <div class="bt-menu-item">
+                                    <h5>Marinated Seafood Salad</h5>
+                                    <p>Price: $</p>
+                                </div>
+                            </div>
+                            <div class="bt-menu">
+                                <div class="bt-menu-item">
+                                    <h5>Sashimi Spicy Tuna with Citrus soy glaze</h5>
+                                    <p>Price: $</p>
+                                </div>
+                            </div>
+                            <div class="bt-menu right">
+                                <div class="bt-menu-item">
+                                    <h5>Smoked Salmon (Capers,Onions)</h5>
+                                    <p>Price: $</p>
+                                </div>
+                            </div>
+                            <div class="bt-menu">
+                                <div class="bt-menu-item">
+                                    <h5>Iced Shrimp Cocktail (4)</h5>
+                                    <p>Price: $</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div>
-                <div class="bt-accordion accordion" >
-                    <div class="bt-accordion-itemBg deactivated" style="background:url('img/menu/main.jpg')"></div>
+                <div class="bt-accordion accordion" id="classics" >
+                    <div class="bt-accordion-itemBg deactivated cliknime" style="background:url('img/menu/main.jpg')"></div>
                     <h3 class="animated cliknime">Classics House Specialties</h3>
-                    <div class="wrapper cf  wine" id="classics">
-                        <h4>USDA - PRIME - DRY - AGED BEST OF ALL CUTS</h4>
-                            <h5>PETITE FILET MIGNON - 8/oz</h5>
-                            <h5>COWBOY RIB EYE STEAK - Bone- in 22 / oz</h5>
-                            <h5>NEW YORK - STRIP STEAK - Bone-in 22/oz</h5>
-                            <h5>PORTERHOUSE FOR TWO - Bone in 38/oz</h5>
-                            <h5>PORTERHOUSE FOR THREE - Bone in 60/oz</h5>
-                            <h5>PORTERHOUSE FOR FOUR - Bone in 80/oz</h5>
-                            <h5>Profiterolles</h5>
+                    <div class="wrapper cf  wine">
+                        <div class="bt-container">
+                            <! -- Classics House Specialties -->
+                            <h4>USDA - PRIME - DRY - AGED BEST OF ALL CUTS</h4>
+                            <div class="bt-menu">
+                                <div class="bt-menu-item">
+                                    <h5>PETITE FILET MIGNON</h5>
+                                    <p>8/oz</p>
+                                </div>
+                            </div>
+                            <div class="bt-menu right">
+                                <div class="bt-menu-item">
+                                    <h5>COWBOY RIB EYE STEAK</h5>
+                                    <p>Bone in 22 / oz</p>
+                                </div>
+                            </div>
+                            <div class="bt-menu">
+                                <div class="bt-menu-item">
+                                    <h5>NEW YORK - STRIP STEAK</h5>
+                                    <p>Bone in 22/oz</p>
+                                </div>
+                            </div>
+                            <div class="bt-menu right">
+                                <div class="bt-menu-item">
+                                    <h5>PORTERHOUSE FOR TWO</h5>
+                                    <p>Bone in 38/oz</p>
+                                </div>
+                            </div>
+                            <div class="bt-menu">
+                                <div class="bt-menu-item">
+                                    <h5>PORTERHOUSE FOR THREE</h5>
+                                    <p>Bone in 60/oz</p>
+                                </div>
+                            </div>
+                            <div class="bt-menu right">
+                                <div class="bt-menu-item">
+                                    <h5>PORTERHOUSE FOR FOUR</h5>
+                                    <p>Bone in 80/oz</p>
+                                </div>
+                            </div>
+                            <div class="bt-menu center">
+                                <div class="bt-menu-item">
+                                    <h5>Profiterolles</h5>
+                                    <p>Price: $</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div>
-                <div class="bt-accordion accordion" >
-                    <div class="bt-accordion-itemBg deactivated" style="background:url('img/menu/fish.jpg')"></div>
+                <div class="bt-accordion accordion" id="fish" >
+                    <div class="bt-accordion-itemBg deactivated cliknime" style="background:url('img/menu/fish.jpg')"></div>
                     <h3 class="animated cliknime">Entrees - Fish</h3>
-                    <div class="wrapper cf  wine" id="fish">
-                        <h4>Enjoy in our Restaurant</h4>
-                            <h5>Jumbo Crab Cake (With Remoulade)</h5>
-                            <h5>Gluten Free Pasta (in Tomateo Sauce)</h5>
-                            <h5>Lobster Ravioli (In a Brandy Pink Sauce)</h5>
-                            <h5>Lobster Tails 8 / oz</h5>
-                            <h5>Grilled Fresh Tuna Steak (Tomato and Capers)</h5>
-                            <h5>Grouper Fresh (With Crab meat, Asparagus and Bearnaise)</h5>
-                            <h5>Grilled T Bone Veal Chop 16 /oz</h5>
-                            <h5>Colorado Lamb Rack</h5>
-                            <h5>Dover Sole (Lemone, Wine Capers)</h5>
-                            <h5>Jumbo Lobster (Broiled or Steamed)</h5>
-                            <h5>FRIED ONIONS RINGS</h5>
+                    <div class="wrapper cf  wine">
+                        <div class="wrapper cf  wine">
+                            <div class="bt-container">
+                                <! -- Entrees - Fish -->
+                                <h4>Enjoy in our Restaurant</h4>
+                                <div class="bt-menu">
+                                    <div class="bt-menu-item">
+                                        <h5>Jumbo Crab Cake (With Remoulade)</h5>
+                                        <p>Price: $</p>
+                                    </div>
+                                </div>
+                                <div class="bt-menu right">
+                                    <div class="bt-menu-item">
+                                        <h5>Gluten Free Pasta (in Tomateo Sauce)</h5>
+                                        <p>Price: $</p>
+                                    </div>
+                                </div>
+                                <div class="bt-menu">
+                                    <div class="bt-menu-item">
+                                        <h5>Lobster Ravioli (In a Brandy Pink Sauce)</h5>
+                                        <p>Price: $</p>
+                                    </div>
+                                </div>
+                                <div class="bt-menu right">
+                                    <div class="bt-menu-item">
+                                        <h5>Lobster Tails 8 / oz</h5>
+                                        <p>Price: $</p>
+                                    </div>
+                                </div>
+                                <div class="bt-menu">
+                                    <div class="bt-menu-item">
+                                        <h5>Grilled Fresh Tuna Steak (Tomato and Capers)</h5>
+                                        <p>Price: $</p>
+                                    </div>
+                                </div>
+                                <div class="bt-menu">
+                                    <div class="bt-menu-item">
+                                        <h5>FRIED ONIONS RINGS</h5>
+                                        <p>Price: $</p>
+                                    </div>
+                                </div>
+                                <div class="bt-menu">
+                                    <div class="bt-menu-item">
+                                        <h5>Grilled T Bone Veal Chop 16 /oz</h5>
+                                        <p>Price: $</p>
+                                    </div>
+                                </div>
+                                <div class="bt-menu right">
+                                    <div class="bt-menu-item">
+                                        <h5>Colorado Lamb Rack</h5>
+                                        <p>Price: $</p>
+                                    </div>
+                                </div>
+                                <div class="bt-menu">
+                                    <div class="bt-menu-item">
+                                        <h5>Dover Sole (Lemone, Wine Capers)</h5>
+                                        <p>Price: $</p>
+                                    </div>
+                                </div>
+                                <div class="bt-menu">
+                                    <div class="bt-menu-item">
+                                        <h5>Jumbo Lobster (Broiled or Steamed)</h5>
+                                        <p>Price: $</p>
+                                    </div>
+                                </div>
+                                <div class="bt-menu center">
+                                    <div class="bt-menu-item">
+                                        <h5>Grouper Fresh (With Crab meat, Asparagus and Bearnaise)</h5>
+                                        <p>Price: $</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div>
-                <div class="bt-accordion accordion">
-                    <div class="bt-accordion-itemBg deactivated" style="background:url('img/menu/side.jpg')"></div>
+                <div class="bt-accordion accordion" id="sideDishes">
+                    <div class="bt-accordion-itemBg deactivated cliknime" style="background:url('img/menu/side.jpg')"></div>
                     <h3 class="animated cliknime">Side Dishes</h3>
-                    <div class="wrapper cf  wine" id="sideDishes">
-                        <h4>Enjoy in our Restaurant</h4>
-                            <h5>STEAK FRIES</h5>
-                            <h5>MASHED POTATOS</h5>
-                            <h5>JUMBO BAKED POTATO</h5>
-                            <h5>SWEET POTATO FRIES</h5>
-                            <h5>SAUTED MUSHROOMS</h5>
-                            <h5>MANHATTAN SPINACH</h5>
-                            <h5>ASPARAGUS STEAMED</h5>
-                            <h5>SPECIAL GERMAN POTATO</h5>
+                    <div class="wrapper cf  wine">
+                        <div class="wrapper cf  wine">
+                            <div class="bt-container">
+                                <! -- Side Dishes -->
+                                <h4>Enjoy in our Restaurant</h4>
+                                <div class="bt-menu">
+                                    <div class="bt-menu-item">
+                                        <h5>STEAK FRIES</h5>
+                                        <p>Price: $</p>
+                                    </div>
+                                </div>
+                                <div class="bt-menu right">
+                                    <div class="bt-menu-item">
+                                        <h5>MASHED POTATOS</h5>
+                                        <p>Price: $</p>
+                                    </div>
+                                </div>
+                                <div class="bt-menu">
+                                    <div class="bt-menu-item">
+                                        <h5>JUMBO BAKED POTATO</h5>
+                                        <p>Price: $</p>
+                                    </div>
+                                </div>
+                                <div class="bt-menu right">
+                                    <div class="bt-menu-item">
+                                        <h5>SWEET POTATO FRIES</h5>
+                                        <p>Price: $</p>
+                                    </div>
+                                </div>
+                                <div class="bt-menu">
+                                    <div class="bt-menu-item">
+                                        <h5>SAUTED MUSHROOMS</h5>
+                                        <p>Price: $</p>
+                                    </div>
+                                </div>
+                                <div class="bt-menu right">
+                                    <div class="bt-menu-item">
+                                        <h5>MANHATTAN SPINACH</h5>
+                                        <p>Price: $</p>
+                                    </div>
+                                </div>
+                                <div class="bt-menu">
+                                    <div class="bt-menu-item">
+                                        <h5>ASPARAGUS STEAMED</h5>
+                                        <p>Price: $</p>
+                                    </div>
+                                </div>
+                                <div class="bt-menu right">
+                                    <div class="bt-menu-item">
+                                        <h5>SPECIAL GERMAN POTATO</h5>
+                                        <p>Price: $</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div>
-                <div class="bt-accordion accordion">
-                    <div class="bt-accordion-itemBg deactivated" style="background:url('img/menu/dessert.jpg')"></div>
+                <div class="bt-accordion accordion" id="desserts">
+                    <div class="bt-accordion-itemBg deactivated cliknime" style="background:url('img/menu/dessert.jpg')"></div>
                     <h3 class="animated cliknime">Desserts</h3>
-                    <div class="wrapper cf  wine" id="desserts">
-                        <h4>Delicious sweets, baked up fresh each day by our awesome pastry chef.
-                            <br/> The perfect end to your meal!</h4>
-
-                            <h5>Homemade Tiramisu</h5>
-                            <h5>Creme Brulee</h5>
-                            <h5>Chocolate Soufflé w/ Vanilla Ice-cream</h5>
-                            <h5>Lemon Sorbet</h5>
-                            <h5>Apple Strudel with ice creme</h5>
-                            <h5>ASPARAGUS STEAMED</h5>
-                            <h5>Coconut Sorbet</h5>
-                            <h5>Tartuffo Italian Ice-cream</h5>
-                            <h5>Pecan Pie with ice cream</h5>
-                            <h5>Key Lime Pie</h5>
+                    <div class="wrapper cf  wine">
+                        <div class="wrapper cf  wine">
+                            <div class="bt-container">
+                                <! -- Desserts -->
+                                <h4>Delicious sweets, baked up fresh each day by our awesome pastry chef.
+                                    <br/> The perfect end to your meal!</h4>
+                                <div class="bt-menu">
+                                    <div class="bt-menu-item">
+                                        <h5>Homemade Tiramisu</h5>
+                                        <p>Price: $</p>
+                                    </div>
+                                </div>
+                                <div class="bt-menu right">
+                                    <div class="bt-menu-item">
+                                        <h5>Creme Brulee</h5>
+                                        <p>Price: $</p>
+                                    </div>
+                                </div>
+                                <div class="bt-menu">
+                                    <div class="bt-menu-item">
+                                        <h5>Chocolate Soufflé w/ Vanilla Ice-cream</h5>
+                                        <p>Price: $</p>
+                                    </div>
+                                </div>
+                                <div class="bt-menu right">
+                                    <div class="bt-menu-item">
+                                        <h5>Lemon Sorbet</h5>
+                                        <p>Price: $</p>
+                                    </div>
+                                </div>
+                                <div class="bt-menu">
+                                    <div class="bt-menu-item">
+                                        <h5>Apple Strudel with ice creme</h5>
+                                        <p>Price: $</p>
+                                    </div>
+                                </div>
+                                <div class="bt-menu right">
+                                    <div class="bt-menu-item">
+                                        <h5>ASPARAGUS STEAMED</h5>
+                                        <p>Price: $</p>
+                                    </div>
+                                </div>
+                                <div class="bt-menu right">
+                                    <div class="bt-menu-item">
+                                        <h5>Coconut Sorbet</h5>
+                                        <p>Price: $</p>
+                                    </div>
+                                </div>
+                                <div class="bt-menu">
+                                    <div class="bt-menu-item">
+                                        <h5>Tartuffo Italian Ice-cream</h5>
+                                        <p>Price: $</p>
+                                    </div>
+                                </div>
+                                <div class="bt-menu right">
+                                    <div class="bt-menu-item">
+                                        <h5>Pecan Pie with ice cream</h5>
+                                        <p>Price: $</p>
+                                    </div>
+                                </div>
+                                <div class="bt-menu">
+                                    <div class="bt-menu-item">
+                                        <h5>Key Lime Pie</h5>
+                                        <p>Price: $</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -336,10 +657,10 @@
             <div class="wrapper">
                 <div id="title-contact" class="passive">
                     <h1 class="animated">Contact Us</h1>
-                    <div class="bd1 animated" id="bd4">
+                    <div class="bd1 animated passive" id="bd4">
                         <img class="animated" src="img/flower.png" alt="flw"/>
                     </div>
-                    <p class="animated">Manhattan Steakhouse specializes in USDA Prime Dry Aged Steak (21-28 days) and
+                    <p class="animated passive">Manhattan Steakhouse specializes in USDA Prime Dry Aged Steak (21-28 days) and
                         <br/>
                         sizzling platters up to 1800 degrees, big selection of fresh seafood and other.</p>
                 </div>
@@ -350,7 +671,7 @@
 
                 <div id="googleMap" class="animated" data-map-infowindow="Manhattan Steakhouse" style="width:99.9%; height:400px;"></div>
 
-                <div id="title-message">
+                <div id="title-message" class="passive">
                     <h1 class="animated">Send a Message</h1>
                     <div class="bd1 animated" id="bd5">
                         <img class="animated" src="img/flower.png" alt="flw"/>
@@ -391,7 +712,7 @@
                     </a>
                 </div>
                 <div id="logo-container-footer">
-                    <a href="#top" class="smoothScroll"><h1 class="animated">Manhattan Steakhouse</h1></a>
+                    <a href="#top" class="smoothScroll"><h1>Manhattan Steakhouse</h1></a>
                 </div>
                 <div id="copyright">
                     <p class="animated">Copyright © 2015 MobileGrows. All rights reserved.</p>
